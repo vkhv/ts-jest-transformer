@@ -1,5 +1,7 @@
 # `ts-jest` transformer base class
 
+[![Build Status](https://travis-ci.org/joscha/ts-jest-transformer.svg?branch=master)](https://travis-ci.org/joscha/ts-jest-transformer)
+
 A base class that can be used to implement a transformer for use with [ts-jest](https://github.com/kulshekhar/ts-jest).
 
 ## Usage
