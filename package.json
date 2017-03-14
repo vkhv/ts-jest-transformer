@@ -22,5 +22,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/joscha/ts-jest-transformer.git"
+  },
+  "engines": {
+    "node": ">= 6"
   }
 }
