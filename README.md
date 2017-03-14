@@ -1,6 +1,7 @@
 # `ts-jest` transformer base class
 
 [![Build Status](https://travis-ci.org/joscha/ts-jest-transformer.svg?branch=master)](https://travis-ci.org/joscha/ts-jest-transformer)
+[![Greenkeeper badge](https://badges.greenkeeper.io/joscha/ts-jest-transformer.svg)](https://greenkeeper.io/)
 
 A base class that can be used to implement a transformer for use with [ts-jest](https://github.com/kulshekhar/ts-jest).
 
