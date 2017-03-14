@@ -47,3 +47,7 @@ and finally add the according `jest` config:
     ]
 }
 ```
+
+## Example
+
+For a more complete example, you can have a look at the [ts-jest-transformer-example](https://github.com/joscha/ts-jest-transformer-example) repository.
