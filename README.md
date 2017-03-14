@@ -1,5 +1,6 @@
 # `ts-jest` transformer base class
 
+[![Build Status](https://travis-ci.org/joscha/ts-jest-transformer.svg?branch=master)](https://travis-ci.org/joscha/ts-jest-transformer)
 [![Greenkeeper badge](https://badges.greenkeeper.io/joscha/ts-jest-transformer.svg)](https://greenkeeper.io/)
 
 A base class that can be used to implement a transformer for use with [ts-jest](https://github.com/kulshekhar/ts-jest).
@@ -47,3 +48,7 @@ and finally add the according `jest` config:
     ]
 }
 ```
+
+## Example
+
+For a more complete example, you can have a look at the [ts-jest-transformer-example](https://github.com/joscha/ts-jest-transformer-example) repository.
