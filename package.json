@@ -10,7 +10,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "peerDependencies": {
-    "ts-jest": "^19.0.1"
+    "ts-jest": "^19.0.7"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
