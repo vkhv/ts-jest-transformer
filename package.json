@@ -15,7 +15,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
     "jest": "^19.0.2",
-    "semantic-release": "^6.3.2",
+    "semantic-release": "^8.0.1",
     "ts-jest": "^19.0.1",
     "typescript": "^2.2.1"
   },
