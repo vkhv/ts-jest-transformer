@@ -1,44 +1,23 @@
-# `ts-jest` transformer base class
+# `ts-jest-svg-png-transformer` transformer svg and png files 
 
-[![Build Status](https://travis-ci.org/joscha/ts-jest-transformer.svg?branch=master)](https://travis-ci.org/joscha/ts-jest-transformer)
-[![Greenkeeper badge](https://badges.greenkeeper.io/joscha/ts-jest-transformer.svg)](https://greenkeeper.io/)
-
-A base class that can be used to implement a transformer for use with [ts-jest](https://github.com/kulshekhar/ts-jest).
 
 ## Usage
 
 Run
 
 ```console
-yarn add ts-jest-transformer --dev
+yarn add ts-jest-svg-png-transformer --dev
 ```
 
 then create your custom transformer:
-
-```js
-// my-transformer.js
-
-const path = require('path');
-const TsJestTransformer = require('ts-jest-transformer');
-
-class MyFileBaseNameTransformer extends TsJestTransformer {
-    process(src, filename, config, options) {
-        // Write TS here
-        const source = 'export default ' + JSON.stringify(path.basename(filename)) + ';';
-        return super.process(source, filename, config, options);
-    }
-}
-
-module.exports = new MyFileBaseNameTransformer();
-```
 
 and finally add the according `jest` config:
 
 ```json
 {
     "transform": {
-        "\\.(svg)$": "<rootDir>/my-transformer.js",
-        "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        "\\.(svg|png)$": "<rootDir>/node_modules/ts-jest-svg-png-transformer/index.ts",
+
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "moduleFileExtensions": [
@@ -49,6 +28,3 @@ and finally add the according `jest` config:
 }
 ```
 
-## Example
-
-For a more complete example, you can have a look at the [ts-jest-transformer-example](https://github.com/joscha/ts-jest-transformer-example) repository.
